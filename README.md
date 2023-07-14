@@ -4,8 +4,8 @@ Neural network on oblique decision tree: Local constant network
 
 ## Repo structure
 
-* [BACE Dataset Demo.ipynb](BACE Dataset Demo.ipynb): contain scripts for reproducing the training and producing prediction
-* [Model comparison.ipynb](Model comparison.ipynb): contain scripts for training 3 datasets in different LCN variations
+* BACE Dataset Demo.ipynb: contain scripts for reproducing the training and producing prediction
+* Model comparison.ipynb: contain scripts for training 3 datasets in different LCN variations
 * [data/](data/): datasets used in the paper. Training/validation/testing splits are provided. 
 * [prediction/](prediction/): new data to be generated prediction on
 * [log/](log/): the logs of the training results will be stored here.
@@ -20,8 +20,8 @@ Neural network on oblique decision tree: Local constant network
 ## Quick start and reproducing training and prediction
 
 
-[BACE Dataset Demo.ipynb](BACE Dataset Demo.ipynb) contain scripts for reproducing the training and producing prediction, please following through for your application on your set of data, make sure the data file format is aligned.
-[Model comparison.ipynb](Model comparison.ipynb): contain scripts for training 3 datasets in different LCN variations. If you want to explore different LCN variations on your data, please follow through the codes to call different network on your dataset.
+BACE Dataset Demo.ipynbcontain scripts for reproducing the training and producing prediction, please following through for your application on your set of data, make sure the data file format is aligned.
+Model comparison.ipynb: contain scripts for training 3 datasets in different LCN variations. If you want to explore different LCN variations on your data, please follow through the codes to call different network on your dataset.
 * The results will be stored in the [log/](log/) directory. The last 3 columns record the training, validation, and testing performance, respectively (from left to right). 
 
 ## How to set hyper-parameters
