@@ -21,9 +21,16 @@ Modified from https://github.com/guanghelee/iclr20-lcn
 ## Quick start and reproducing training and prediction
 
 
-* BACE Dataset Demo.ipynbcontain scripts for reproducing the training and producing prediction, please following through for your application on your set of data, make sure the data file format is aligned.
+* BACE Dataset Demo.ipynb contain scripts for reproducing the training and producing prediction, please following through for your application on your set of data, make sure the data file format is aligned.
 * Model comparison.ipynb: contain scripts for training 3 datasets in different LCN variations. If you want to explore different LCN variations on your data, please follow through the codes to call different network on your dataset.
 * The results will be stored in the [log/](log/) directory. The last 3 columns record the training, validation, and testing performance, respectively (from left to right). 
+
+## Guidelines on code demo and using the model for your own data
+
+
+* BACE Dataset Demo.ipynb is the code demo, running each cells from beginning to the end in the notebook goes through (1) studying the training data, (2) training the model using the training data and pre-defined hyper-parameters, (3) visualizing performance of the trainings done in the log file, (4) studying the new data we want to use the trained model on prediction, (5) load the trained weights with the pre-defined hyper-parameters to reinitiate the model on generating prediction on the new dataset we put in ./prediction folder
+* To apply to your own data, please (1) split your training dataset in test_split, train_split and valid_split and store into ./data/application_split, make sure they follow 2048x1 dimension, you can reference the dataset format in BACE/tox21/HIV, (2) follow the demo, change data location to ./application_split and tune hyper-parameters for best performance, (3) prepare your new data that you want to generate prediction on and store it in ./prediction/applpication_split/ (4) call prediction script to generate prediction on it, when calling the script you need to set the hyper-parameters the same as your training hyper-parameters in order to reproduce the same model environment
+
 
 ## How to set hyper-parameters
 
