@@ -1,6 +1,4 @@
-# COMP7404-Project-Group-1
 Neural network on oblique decision tree: Local constant network <br />
-Group Project Study <br />
 Modified from https://github.com/guanghelee/iclr20-lcn
 
 ## Repo structure
